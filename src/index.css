@@ -7,7 +7,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  padding: 0 10px;
 }
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+  padding: 15px 0;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.radio-btn {  
+  margin-bottom: 20px;  
+}
+
+label:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+/* http://www.omdbapi.com/?i=tt3896198&apikey=99ff6f58 */
